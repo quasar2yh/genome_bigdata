@@ -1,11 +1,18 @@
 
 num = int(input('input digit:'))
 
-list00 = ['A','G','T','C']
-nu = ''
-for i in range(num):
-    for j in list00:
-        nu+=j
-        if len(nu)==3:
-            print(nu)
-            nu==''
+nu =[]
+nu_list=['A','T','G','C']
+
+def kmer():
+    for i in range(num):
+        for j in nu_list:
+            nu[i]=j
+            if len(nu)==num:
+                print(nu)
+
+kmer()
+
+
+    
+    
